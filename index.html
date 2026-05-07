@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>uMate Privacy Policy</title>
+  <meta name="description" content="Privacy policy for uMate, an AI-powered voice journal.">
+  <style>
+    :root {
+      --fg: #1d1d1f;
+      --muted: #6e6e73;
+      --accent: #0066cc;
+      --bg: #ffffff;
+      --bg-soft: #f5f5f7;
+      --border: #d2d2d7;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --fg: #f5f5f7;
+        --muted: #a1a1a6;
+        --accent: #2997ff;
+        --bg: #000000;
+        --bg-soft: #1c1c1e;
+        --border: #38383a;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "PingFang SC", "Microsoft YaHei", sans-serif;
+      font-size: 17px;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap {
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 48px 24px 96px;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 20px;
+      margin-bottom: 32px;
+    }
+    header h1 {
+      font-size: 32px;
+      letter-spacing: -0.01em;
+      margin: 0 0 6px;
+    }
+    header .updated {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    h2 {
+      font-size: 22px;
+      letter-spacing: -0.005em;
+      margin: 36px 0 12px;
+    }
+    h3 {
+      font-size: 17px;
+      margin: 20px 0 8px;
+    }
+    p, ul { margin: 0 0 14px; }
+    ul { padding-left: 22px; }
+    li { margin: 4px 0; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .lede {
+      background: var(--bg-soft);
+      border-left: 3px solid var(--accent);
+      padding: 16px 18px;
+      border-radius: 6px;
+      margin: 24px 0 32px;
+    }
+    .lede strong { font-weight: 600; }
+    code {
+      background: var(--bg-soft);
+      padding: 1px 5px;
+      border-radius: 4px;
+      font-family: ui-monospace, SFMono-Regular, monospace;
+      font-size: 0.9em;
+    }
+    footer {
+      margin-top: 64px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>uMate Privacy Policy</h1>
+      <div class="updated">Last updated: May 7, 2026</div>
+    </header>
+
+    <div class="lede">
+      <strong>Local-first by design.</strong> Your phone is the source of truth for everything uMate captures. The server is a transient processor that deletes data immediately after your device acknowledges receipt. We do not sell data, run third-party advertising, or use your content to train external models.
+    </div>
+
+    <h2>1. What we collect</h2>
+    <ul>
+      <li><strong>Audio recordings</strong> captured while the app is actively recording. An orange &ldquo;Recording&rdquo; badge stays visible at the top of the screen during capture. On-device voice activity detection (VAD) filters silence; only spoken segments are uploaded.</li>
+      <li><strong>Photos</strong> that you explicitly select from your library or capture using the in-app camera.</li>
+      <li><strong>Text input</strong> you type in the search or chat bar.</li>
+      <li><strong>Voiceprint sample</strong> (~15 seconds, optional). Used only to identify your voice in multi-speaker recordings. You can skip enrollment or re-record at any time.</li>
+      <li><strong>Anonymous device identifier</strong> (Apple&rsquo;s <code>identifierForVendor</code>) to scope your data to this device.</li>
+      <li><strong>Apple ID identifier and email</strong> only if you choose to Sign in with Apple. Used to associate your data with a stable account so it survives reinstall and is reachable from your other devices.</li>
+    </ul>
+
+    <h2>2. What we do not collect</h2>
+    <ul>
+      <li>Background audio when the recording indicator is off.</li>
+      <li>Photos you have not explicitly selected.</li>
+      <li>Contacts, location, browsing or search history, health or fitness data, financial data, advertising identifiers.</li>
+    </ul>
+
+    <h2>3. How we use what we collect</h2>
+    <ul>
+      <li>Process your audio, photos, and text into searchable event cards, daily summaries, and action items (calendar events, reminders).</li>
+      <li>Build your voiceprint so the AI can attribute speech in multi-person recordings.</li>
+      <li>Sync your data across your devices, only if you have signed in with Apple.</li>
+    </ul>
+
+    <h2>4. Where your data lives</h2>
+    <ul>
+      <li>A <strong>local copy</strong> lives in your app sandbox on this device (SQLite database and image cache). This is the long-term store.</li>
+      <li>A <strong>server-side copy</strong> exists only briefly during processing. Once your device acknowledges receipt of the processed result, server-side personal data is deleted immediately.</li>
+      <li>If you have explicitly opted in to cross-device sync, the server retains a copy until you delete your account or disable sync.</li>
+      <li>Your voiceprint sample is kept on the server while voice attribution is enabled, so it can be matched against new recordings. Deleting your account removes it.</li>
+    </ul>
+
+    <h2>5. Who we share with</h2>
+    <ul>
+      <li>We do not sell your data, share it with advertisers, or use it for behavioral profiling.</li>
+      <li>AI processing uses third-party large-language-model providers (OpenAI, Anthropic, Google, ByteDance VolcEngine). Transcripts and event text are sent to these providers solely to compute the response. Under our enterprise contracts with each provider, your content is not used to train their public models.</li>
+      <li>If you grant access via Model Context Protocol (MCP), the data exposed is limited to the scope you authorize. You can revoke MCP access at any time from Settings.</li>
+    </ul>
+
+    <h2>6. Your rights</h2>
+    <ul>
+      <li>View, export, or delete all your data from Settings inside the app.</li>
+      <li>Disable recording at any time by tapping the Recording indicator on the main screen.</li>
+      <li>Sign out and request full account deletion by emailing <a href="mailto:privacy@umate.ai">privacy@umate.ai</a>.</li>
+      <li>If you reside in the EU (GDPR), California (CCPA / CPRA), or China (PIPL) we honor the rights granted by those laws, including access, correction, portability, and deletion. We respond within 30 days.</li>
+    </ul>
+
+    <h2>7. Security</h2>
+    <ul>
+      <li>HTTPS / TLS for all network traffic.</li>
+      <li>Data at rest is encrypted using the cloud provider&rsquo;s standard at-rest encryption.</li>
+      <li>Recordings and personal data are scoped per user account; no cross-user access from any client.</li>
+    </ul>
+
+    <h2>8. Children</h2>
+    <p>uMate is not directed at children under 13. If you are under 13, please do not use the app or submit any personal information.</p>
+
+    <h2>9. Changes to this policy</h2>
+    <p>If we make material changes to this policy we will notify you via an in-app banner before the changes take effect, and update the &ldquo;Last updated&rdquo; date above.</p>
+
+    <h2>10. Contact</h2>
+    <p>Questions, requests, or reports: <a href="mailto:privacy@umate.ai">privacy@umate.ai</a></p>
+
+    <footer>
+      &copy; 2026 uMate. Source of this page: <a href="https://github.com/vtech-ai/uMate-privacy">github.com/vtech-ai/uMate-privacy</a>
+    </footer>
+  </div>
+</body>
+</html>
