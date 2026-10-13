@@ -17,11 +17,11 @@ The page goes live within a minute or so at:
 
 ## Custom domain (optional)
 
-If pointing `umate.ai/privacy` here:
+If pointing `plintho.app/privacy` here:
 
-1. Add a `CNAME` file in this repo containing `umate.ai`.
-2. In your DNS provider, add a `CNAME` record from `umate.ai` (or `privacy.umate.ai`) to `vtech-ai.github.io`.
-3. Repo Settings → Pages → Custom domain → enter `umate.ai` (or your subdomain) → Save → wait for HTTPS.
+1. Add a `CNAME` file in this repo containing `plintho.app`.
+2. In your DNS provider, add a `CNAME` record from `plintho.app` (or `privacy.plintho.app`) to `vtech-ai.github.io`.
+3. Repo Settings → Pages → Custom domain → enter `plintho.app` (or your subdomain) → Save → wait for HTTPS.
 
 ## Updating
 
