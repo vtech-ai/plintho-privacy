@@ -1,6 +1,6 @@
-# uMate Privacy Policy
+# Plintho Privacy Policy
 
-Source of the privacy policy hosted at <https://vtech-ai.github.io/uMate-privacy/>.
+Source of the privacy policy hosted at <https://vtech-ai.github.io/plintho-privacy/>.
 
 ## How it's served
 
@@ -13,7 +13,7 @@ GitHub repo → Settings → Pages → Source: **Deploy from a branch** → Bran
 
 The page goes live within a minute or so at:
 
-    https://vtech-ai.github.io/uMate-privacy/
+    https://vtech-ai.github.io/plintho-privacy/
 
 ## Custom domain (optional)
 
